@@ -1,0 +1,18 @@
+<!-- poi/templates/pois/lista_pois.html -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de POIs</title>
+</head>
+<body>
+    <h1>Lista de POIs</h1>
+    <ul>
+        {% for poi in pois %}
+            <li>{{ poi.nome }} - Latitude: {{ poi.latitude }} - Longitude: {{ poi.longitude }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+
+# Virtual environment
+venv/
+env/
+*.env
+*.venv
+
+# Django Migrations
+*/migrations/*.pyc
+*/migrations/*.py
+
+# Configuração local
+local_settings.py
+.env
+
+# Media e Static gerados
+/staticfiles/
+/media/
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+
+# Build
+build/
+dist/
+
+# Editor
+.idea/
+.vscode/
+.DS_Store

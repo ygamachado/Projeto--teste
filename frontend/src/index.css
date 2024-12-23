@@ -1,0 +1,160 @@
+/* Estilo geral do body */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e9ecef;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: #333;
+}
+
+/* Estilo do título */
+h1 {
+  color: #343a40;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilo para os formulários */
+form div {
+  margin-bottom: 15px;
+}
+
+/* Estilo do botão */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Classe personalizada para o menu lateral */
+.menu-lateral {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-lateral h4 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Classe personalizada para os links de navegação */
+.nav-link-custom {
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  background-color: #4929bc;
+}
+
+.nav-link-custom:hover {
+  background-color: #462cbd;
+  color: #172e42;
+}
+
+/* Classe personalizada para o conteúdo principal */
+.conteudo-principal {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilo para a lista de localizações */
+.lista-localizacoes .list-group-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  color: #333;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lista-localizacoes .list-group-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .menu-lateral, .conteudo-principal {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  border-radius: 50%;
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.page-link:hover {
+  background-color: #0056b3;
+}
+.alinha-direita {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.custom-title-flag{
+  background-color: #4929bc;
+  width: 50%;
+  border-radius: 30px;
+  height: 30px;
+  margin: 5px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.h-custom{
+    margin-top: 10px;
+    padding-top: 5px;
+    color: white;
+}
+.custom-title-result{
+  background-color: #afa6ce;
+  height: 30px;
+  margin: 5px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+.h4-custom{
+    margin-top: 10px;
+    padding-top: 5px;
+    color: white;
+}
