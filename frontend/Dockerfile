@@ -4,20 +4,24 @@ FROM node:20
 # Define o diretório de trabalho no container
 WORKDIR /app
 
-# Copia os arquivos de dependências
+# Copia apenas os arquivos de dependências
 COPY package*.json ./
 
-# Instala as dependências
-RUN npm install
+# Instala as dependências de forma explícita
+RUN npm install --legacy-peer-deps
 
 # Copia o restante do código para o container
 COPY . .
 
-# Executa os testes durante o build (se falhar, o build para)
-#RUN npm test
+# Certifique-se de que node_modules e binários estejam presentes
+RUN ls -la node_modules/.bin
+
+# Evita erro do react-scripts não encontrado
+ENV PATH /app/node_modules/.bin:$PATH
 
 # Expõe a porta 3000
 EXPOSE 3000
 
-# Comando padrão para desenvolvimento
-CMD ["npm", "run", "start"]
+# Garante que as dependências estejam sempre instaladas
+CMD ["npm", "start"]
+

@@ -31,12 +31,15 @@ services:
     command: npm start
     volumes:
       - ./frontend:/app
+      - /app/node_modules  # Impede que node_modules seja sobrescrito
     ports:
       - "3000:3000"
     depends_on:
       - backend
     networks:
       - app-network
+    stdin_open: true  # Mantém o terminal interativo
+    tty: true         # Garante a execução contínua do container
 
 volumes:
   postgres_data:
