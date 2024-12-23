@@ -32,7 +32,7 @@ function LocationList() {
   return (
     <Layout>
        <div className="custom-title-flag text-center">
-         <h1 className="h-custom">Localizações</h1>
+         <h1 className="h-custom">Localizações <i class="fas fa-map-marker-alt"></i></h1>
        </div>
 
       <ul className="list-group lista-localizacoes text-center">

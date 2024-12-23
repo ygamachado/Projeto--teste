@@ -64,7 +64,7 @@ function SearchProximity() {
       <div className="col-md-12">
         <div className="row">
           <div className="custom-title-flag text-center">
-            <h1 className="h-custom">Buscar por Proximidade</h1>
+            <h1 className="h-custom">Buscar por Proximidade <i className="fas fa-search"></i></h1>
           </div>
           <form onSubmit={handleSearch}>
             <div className="mb-3">
@@ -98,8 +98,12 @@ function SearchProximity() {
               />
             </div>
             <div className="alinha-direita mt-3">
-              <button type="submit" className="btn btn-primary me-2">Buscar</button>
-              <button type="button" className="btn btn-secondary" onClick={() => navigate('/')}>Voltar</button>
+              <button type="submit" className="btn btn-primary me-2">
+                <i className="fas fa-search"></i> Buscar
+              </button>
+              <button type="button" className="btn btn-secondary" onClick={() => navigate('/')}>
+                <i className="fas fa-arrow-left"></i> Voltar
+              </button>
             </div>
           </form>
 
